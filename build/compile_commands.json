@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/reuben/CLionProjects/savipkg/build",
+  "command": "/usr/bin/gcc -g -std=gnu2x -o CMakeFiles/savipkg.dir/main.c.o -c /home/reuben/CLionProjects/savipkg/main.c",
+  "file": "/home/reuben/CLionProjects/savipkg/main.c",
+  "output": "CMakeFiles/savipkg.dir/main.c.o"
+}
+]

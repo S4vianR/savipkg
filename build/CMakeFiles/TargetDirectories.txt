@@ -1,0 +1,3 @@
+/home/reuben/CLionProjects/savipkg/build/CMakeFiles/savipkg.dir
+/home/reuben/CLionProjects/savipkg/build/CMakeFiles/edit_cache.dir
+/home/reuben/CLionProjects/savipkg/build/CMakeFiles/rebuild_cache.dir
