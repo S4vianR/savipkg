@@ -99,3 +99,29 @@ Server = http://tu_dominio_o_ip/$repo/os/$arch
 - **Seguridad**: Si tu mirror está expuesto a Internet, asegúrate de implementar medidas de seguridad adecuadas, como firewalls y autenticación si es necesario.
 
 Siguiendo estos pasos, deberías poder crear y mantener tu propio mirror de paquetes de Arch Linux. ¡Buena suerte!
+
+Para programar un cron job que ejecute el comando `rsync` cada tres días a las 3 AM, puedes modificar la línea en el crontab de la siguiente manera:
+
+1. Abre el crontab para editarlo:
+
+   ```bash
+   sudo crontab -e
+   ```
+
+2. Agrega la siguiente línea al final del archivo:
+
+   ```bash
+   0 3 */3 * * /usr/bin/rsync -av --delete rsync://archlinux.org/archlinux/ /srv/archlinux/
+   ```
+
+   Aquí, `*/3` en el campo de días del mes indica que el comando se ejecutará cada tres días.
+
+3. Guarda y cierra el editor. Si estás usando `nano`, puedes hacerlo presionando `CTRL + X`, luego `Y` para confirmar los cambios y `Enter` para salir.
+
+4. Para verificar que el cron job se haya agregado correctamente, puedes listar los cron jobs con el siguiente comando:
+
+   ```bash
+   sudo crontab -l
+   ```
+
+Con esta configuración, tu mirror de Arch Linux se actualizará automáticamente cada tres días a las 3 AM. ¡Espero que esto te ayude!

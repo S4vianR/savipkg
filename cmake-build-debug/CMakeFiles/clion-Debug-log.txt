@@ -1,10 +1,10 @@
-/var/lib/snapd/snap/clion/322/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/322/bin/ninja/linux/x64/ninja -G Ninja -S /home/reuben/CLionProjects/savipkg -B /home/reuben/CLionProjects/savipkg/cmake-build-debug
--- The C compiler identification is GNU 14.2.1
+"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\reube\Code\savipkg -B C:\Users\reube\Code\savipkg\cmake-build-debug
+-- The C compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Configuring done (0.1s)
+-- Configuring done (2.3s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/reuben/CLionProjects/savipkg/cmake-build-debug
+-- Build files have been written to: C:/Users/reube/Code/savipkg/cmake-build-debug
