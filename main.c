@@ -278,15 +278,22 @@ void install_package(const char *package_name)
     {
         char package_url[1024];
         snprintf(package_url, sizeof(package_url), "%s/%s", urls[i], package_name);
-        if (fetch_and_save_package(package_url, output_path) == 0)
+        if (fetch_and_save_package(package_url, output_path) != 0)
         {
-            printf("Paquete %s descargado y guardado en: %s\n", package_name, output_path);
+            printf("No se pudo descargar el paquete %s\n", package_name);
+            break;
+        } else {
             break;
         }
     }
 
+    // Extraer el nombre del paquete y la versión
+    char package_info[256];
+    snprintf(package_info, sizeof(package_info), "\nPaquete a instalar: %s", package_name);
+    printf("%s\n", package_info);
+
     // Instalar el paquete desempaquetando el archivo y moviendo los archivos a sus ubicaciones
-    system("tar -xvf /tmp/savipkg/*.tar.zst -C /");
+    system("tar -xvf /tmp/savipkg/*.tar.zst -C / > /dev/null");
 
     // Preguntar al usuario si desea instalar el paquete
     printf("¿Desea instalar el paquete? (s/n): ");
@@ -464,7 +471,7 @@ int main(int argc, char *argv[])
 
             if (install_package_name != NULL)
             {
-                printf("Instalando paquete: %s\n", install_package_name);
+                printf("Descargando el archivo: %s\n", install_package_name);
                 install_package(install_package_name);
             }
         }
