@@ -4,9 +4,9 @@
 #include <getopt.h>
 #include <ctype.h>
 #include <curl/curl.h>
-#include <unistd.h> // Para la función geteuid()
+#include <unistd.h>
 #include <errno.h>
-#include <sys/ioctl.h> // Para obtener el tamaño de la terminal
+#include <sys/ioctl.h>
 
 /**
  * Este es savipkg un administrador de paquetes para sistemas operativos basados en linux
