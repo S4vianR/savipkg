@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.29.6"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "savipkg::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-savipkg-Debug-ea141cd34c4245cd360f.json",
+					"jsonFile" : "target-savipkg-Debug-37b653775eff1cbaed2a.json",
 					"name" : "savipkg",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/reuben/CLionProjects/savipkg/build",
+		"build" : "/home/reuben/CLionProjects/savipkg/cmake-build-debug",
 		"source" : "/home/reuben/CLionProjects/savipkg"
 	},
 	"version" : 
