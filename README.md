@@ -5,8 +5,8 @@ Bienvenid@s seán a mi manejador de paquetes, es una versión sencilla utilizand
 ## Flags del programa
 
 Flags de uso:
-[ ]: "-r" Esto es para especificar algún repositorio, como "core", "extra", "multilib", etc. **Por el momento no se soporta el AUR**.
 
+- : "-r" Esto es para especificar algún repositorio, como "core", "extra", "multilib", etc. **Por el momento no se soporta el AUR**.
 - "-s" Esto es para buscar el paquete en específico.
 - "-i" Esta flag es para instalar el paquete con el archivo especificado.
 - "-R" Esta flag es para eliminar un paquete del sistema
