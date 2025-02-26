@@ -1,0 +1,4 @@
+.idea/
+.vscode/
+savipkg
+cmake-build-debug/
